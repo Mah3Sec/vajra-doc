@@ -287,7 +287,7 @@ code{font-family:var(--mono);font-size:12.5px;background:var(--s3);border:1px so
 </style>
 </head>
 <body>
-<div class="sidebar-overlay" id="overlay" onclick="closeSidebar()"></div>
+<div class="sidebar-overlay" id="overlay"></div>
 
 <div class="layout">
 
@@ -957,8 +957,10 @@ function go(id, title) {
   document.getElementById('topTitle').textContent = title;
   document.querySelector('.content').scrollTo(0, 0);
   location.hash = id;
-  // Close sidebar on mobile after nav
-  closeSidebar();
+  // On mobile: let the active highlight show for a moment before sliding sidebar away
+  if (window.innerWidth <= 640) {
+    setTimeout(closeSidebar, 200);
+  }
 }
 
 function cp(btn) {
@@ -974,9 +976,14 @@ function cp(btn) {
 function toggleSidebar() {
   const sb = document.getElementById('sidebar');
   const ov = document.getElementById('overlay');
-  sb.classList.toggle('open');
-  ov.classList.toggle('on');
-  document.body.style.overflow = sb.classList.contains('open') ? 'hidden' : '';
+  const isOpen = sb.classList.contains('open');
+  if (isOpen) {
+    closeSidebar();
+  } else {
+    sb.classList.add('open');
+    ov.classList.add('on');
+    document.body.style.overflow = 'hidden';
+  }
 }
 
 function closeSidebar() {
@@ -987,8 +994,14 @@ function closeSidebar() {
   document.body.style.overflow = '';
 }
 
+// Close on overlay click
+document.getElementById('overlay').addEventListener('click', closeSidebar);
+
 // Close on escape key
 document.addEventListener('keydown', e => { if (e.key === 'Escape') closeSidebar(); });
+
+// Prevent clicks inside sidebar from closing it via overlay bubbling
+document.getElementById('sidebar').addEventListener('click', e => e.stopPropagation());
 
 // Hash routing on load
 const h = location.hash.replace('#','');
