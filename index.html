@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>VAJRA — Documentation</title>
+<title>VEDA — Documentation</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
@@ -213,7 +213,7 @@ code{font-family:var(--mono);font-size:12.5px;background:var(--s3);border:1px so
       <div class="nav-item" onclick="go('changelog','/ changelog')">
         <svg viewBox="0 0 24 24"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><polyline points="12 6 12 12 16 14"/></svg>Changelog
       </div>
-      <a class="nav-item" href="https://github.com/Mah3Sec/VAJRA" target="_blank">
+      <a class="nav-item" href="https://github.com/Mah3Sec/VEDA" target="_blank">
         <svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>GitHub ↗
       </a>
     </div>
@@ -231,14 +231,14 @@ code{font-family:var(--mono);font-size:12.5px;background:var(--s3);border:1px so
   </button>
   <div class="brand">
     <div class="brand-icon"><svg viewBox="0 0 24 24"><polygon points="13,2 3,14 12,14 11,22 21,10 12,10"/></svg></div>
-    <span class="brand-name">VAJRA</span>
+    <span class="brand-name">VEDA</span>
     <span class="brand-v">v1.4.1</span>
   </div>
   <div class="topbar-title" id="topTitle">/ introduction</div>
   <div class="topbar-links">
-    <a href="https://github.com/Mah3Sec/VAJRA/releases" target="_blank">Releases</a>
-    <a href="https://github.com/Mah3Sec/VAJRA/issues" target="_blank">Issues</a>
-    <a href="https://github.com/Mah3Sec/VAJRA" target="_blank" class="gh">★ GitHub</a>
+    <a href="https://github.com/Mah3Sec/VEDA/releases" target="_blank">Releases</a>
+    <a href="https://github.com/Mah3Sec/VEDA/issues" target="_blank">Issues</a>
+    <a href="https://github.com/Mah3Sec/VEDA" target="_blank" class="gh">★ GitHub</a>
   </div>
 </header>
 
@@ -248,9 +248,9 @@ code{font-family:var(--mono);font-size:12.5px;background:var(--s3);border:1px so
 <div class="page active" id="p-intro">
   <div class="pg-head">
     <div class="pg-title">Introduction</div>
-    <div class="pg-sub">VAJRA — Vulnerability Analysis, Judgement &amp; Reporting Arsenal</div>
+    <div class="pg-sub">VEDA — Vulnerability Analysis, Judgement &amp; Reporting Arsenal</div>
   </div>
-  <p>VAJRA is a locally-hosted AI report generator for security professionals. It transforms your raw pentest findings into complete, professional reports — aligned with CREST, PTES, OWASP, and NIST standards — using any AI provider you configure.</p>
+  <p>VEDA is a locally-hosted AI report generator for security professionals. It transforms your raw pentest findings into complete, professional reports — aligned with CREST, PTES, OWASP, and NIST standards — using any AI provider you configure.</p>
   <p>Everything runs on your machine. Your findings and client data never leave your network except to the AI endpoint you explicitly configure.</p>
 
   <h2>Features</h2>
@@ -300,7 +300,7 @@ code{font-family:var(--mono);font-size:12.5px;background:var(--s3);border:1px so
 <div class="page" id="p-install">
   <div class="pg-head">
     <div class="pg-title">Installation</div>
-    <div class="pg-sub">Get VAJRA running on Mac or Linux in under 5 minutes.</div>
+    <div class="pg-sub">Get VEDA running on Mac or Linux in under 5 minutes.</div>
   </div>
   <h2>Requirements</h2>
   <div class="tbl-wrap"><table class="tbl">
@@ -310,8 +310,8 @@ code{font-family:var(--mono);font-size:12.5px;background:var(--s3);border:1px so
     <tr><td>pip</td><td>any</td><td><code>pip3 --version</code></td></tr>
   </table></div>
   <h2>Quick Install</h2>
-  <pre><button class="copy-btn" onclick="cp(this)">Copy</button><code>git clone https://github.com/Mah3Sec/VAJRA.git
-cd VAJRA
+  <pre><button class="copy-btn" onclick="cp(this)">Copy</button><code>git clone https://github.com/Mah3Sec/VEDA.git
+cd VEDA
 bash setup.sh</code></pre>
   <p>The setup script installs Python and Node.js dependencies, creates your <code>.env</code> config, and sets up runtime directories.</p>
   <h2>Manual Install</h2>
@@ -324,19 +324,19 @@ mkdir -p reports database ui/static/logos</code></pre>
   <pre><button class="copy-btn" onclick="cp(this)">Copy</button><code>python3 app.py</code></pre>
   <p>Open <a href="http://localhost:5000" target="_blank">http://localhost:5000</a> in your browser.</p>
   <div class="callout callout-warn">
-    <strong>Default credentials:</strong> username <code>admin</code> / password <code>vajra-admin-2026</code><br>
+    <strong>Default credentials:</strong> username <code>admin</code> / password <code>veda-admin-2026</code><br>
     Change the admin password immediately after first login.
   </div>
   <h2>Docker</h2>
-  <pre><button class="copy-btn" onclick="cp(this)">Copy</button><code>docker build -t vajra .
-docker run -p 5000:5000 --env-file .env vajra</code></pre>
+  <pre><button class="copy-btn" onclick="cp(this)">Copy</button><code>docker build -t veda .
+docker run -p 5000:5000 --env-file .env veda</code></pre>
 </div>
 
 <!-- QUICK START -->
 <div class="page" id="p-quickstart">
   <div class="pg-head">
     <div class="pg-title">Quick Start</div>
-    <div class="pg-sub">Generate your first report in 5 steps. New to VAJRA? Start with Groq — free, no card needed.</div>
+    <div class="pg-sub">Generate your first report in 5 steps. New to VEDA? Start with Groq — free, no card needed.</div>
   </div>
   <div class="callout callout-ok">
     <strong>Free option:</strong> Get a Groq API key at <a href="https://console.groq.com" target="_blank">console.groq.com</a> — takes 2 minutes, no credit card required.
@@ -355,7 +355,7 @@ AI_MODEL=llama-3.3-70b-versatile</code></pre>
     <div class="step">
       <div class="step-num">2</div>
       <div class="step-body">
-        <h4>Start VAJRA</h4>
+        <h4>Start VEDA</h4>
         <pre><button class="copy-btn" onclick="cp(this)">Copy</button><code>python3 app.py</code></pre>
         <p>Open <a href="http://localhost:5000">http://localhost:5000</a> — check ✅ AI Connected in the top bar.</p>
       </div>
@@ -383,7 +383,7 @@ AI_MODEL=llama-3.3-70b-versatile</code></pre>
     </div>
   </div>
   <div class="callout callout-info">
-    <strong>Large assessments:</strong> For 10+ findings, VAJRA automatically switches to parallel chunked generation with a real-time progress bar — no timeouts.
+    <strong>Large assessments:</strong> For 10+ findings, VEDA automatically switches to parallel chunked generation with a real-time progress bar — no timeouts.
   </div>
 </div>
 
@@ -395,7 +395,7 @@ AI_MODEL=llama-3.3-70b-versatile</code></pre>
   </div>
 
   <div class="callout callout-ok">
-    <strong>New to VAJRA?</strong> Start with <strong>Groq</strong> — free, no credit card, 14,400 requests/day. Get a key at <a href="https://console.groq.com" target="_blank">console.groq.com</a> in 2 minutes.
+    <strong>New to VEDA?</strong> Start with <strong>Groq</strong> — free, no credit card, 14,400 requests/day. Get a key at <a href="https://console.groq.com" target="_blank">console.groq.com</a> in 2 minutes.
   </div>
 
   <h2>Environment Variables</h2>
@@ -517,7 +517,7 @@ SKIP_SSL_VERIFY=true</code></pre>
     <tr><td><code>AI_MODEL</code></td><td><code>claude-sonnet-4-6</code></td><td>Model name or ID</td></tr>
     <tr><td><code>SKIP_SSL_VERIFY</code></td><td><code>false</code></td><td>Disable TLS verification for self-signed certs</td></tr>
     <tr><td><code>SECRET_KEY</code></td><td>random</td><td>Flask session secret — always set for production</td></tr>
-    <tr><td><code>ADMIN_PASSWORD</code></td><td><code>vajra-admin-2026</code></td><td>Admin password — synced on every restart</td></tr>
+    <tr><td><code>ADMIN_PASSWORD</code></td><td><code>veda-admin-2026</code></td><td>Admin password — synced on every restart</td></tr>
     <tr><td><code>HOST</code></td><td><code>0.0.0.0</code></td><td>Server bind address</td></tr>
     <tr><td><code>PORT</code></td><td><code>5000</code></td><td>Listen port</td></tr>
     <tr><td><code>HTTPS</code></td><td><code>false</code></td><td>Enable Secure cookie flag when behind HTTPS</td></tr>
@@ -570,10 +570,10 @@ SKIP_SSL_VERIFY=true</code></pre>
 <div class="page" id="p-findings">
   <div class="pg-head">
     <div class="pg-title">Adding Findings</div>
-    <div class="pg-sub">Three methods to get findings into VAJRA.</div>
+    <div class="pg-sub">Three methods to get findings into VEDA.</div>
   </div>
   <h2>Method 1 — Paste Raw Notes</h2>
-  <p>Dump your raw notes directly — no formatting needed. VAJRA structures everything into proper findings with CVSS, CWE, and remediation.</p>
+  <p>Dump your raw notes directly — no formatting needed. VEDA structures everything into proper findings with CVSS, CWE, and remediation.</p>
   <pre><button class="copy-btn" onclick="cp(this)">Copy</button><code>SQL injection on /api/login — high severity
 Confirmed with sqlmap. Database: MySQL 8.0, running as root.
 
@@ -592,7 +592,7 @@ No X-Frame-Options or Content-Security-Policy.</code></pre>
     <tr><td>Nmap</td><td><code>.xml</code></td><td><code>nmap -oX output.xml [target]</code></td></tr>
   </table></div>
   <div class="callout callout-info">
-    <strong>10+ findings:</strong> VAJRA switches to parallel chunked generation automatically. Real-time progress bar, no timeouts.
+    <strong>10+ findings:</strong> VEDA switches to parallel chunked generation automatically. Real-time progress bar, no timeouts.
   </div>
 </div>
 
@@ -622,7 +622,7 @@ No X-Frame-Options or Content-Security-Policy.</code></pre>
   </table></div>
   <p>Go to <strong>Settings → Templates</strong> → upload your file. It appears in the Template dropdown on the report form.</p>
   <div class="callout callout-info">
-    <strong>Full guide:</strong> See <a href="https://github.com/Mah3Sec/VAJRA/blob/main/CUSTOM_TEMPLATE_GUIDE.md" target="_blank">CUSTOM_TEMPLATE_GUIDE.md</a> on GitHub for a complete worked example.
+    <strong>Full guide:</strong> See <a href="https://github.com/Mah3Sec/VEDA/blob/main/CUSTOM_TEMPLATE_GUIDE.md" target="_blank">CUSTOM_TEMPLATE_GUIDE.md</a> on GitHub for a complete worked example.
   </div>
 </div>
 
@@ -639,7 +639,7 @@ No X-Frame-Options or Content-Security-Policy.</code></pre>
     <tr><td>PDF via LibreOffice</td><td>Highest fidelity — converts the styled DOCX</td><td><code>brew install --cask libreoffice</code></td></tr>
     <tr><td>PDF via weasyprint</td><td>Good quality HTML-to-PDF</td><td><code>pip3 install weasyprint markdown</code></td></tr>
   </table></div>
-  <p>VAJRA tries PDF backends automatically in order: LibreOffice → pandoc → weasyprint. Install any one.</p>
+  <p>VEDA tries PDF backends automatically in order: LibreOffice → pandoc → weasyprint. Install any one.</p>
   <pre><button class="copy-btn" onclick="cp(this)">Copy</button><code># Easiest PDF option
 pip3 install weasyprint markdown --break-system-packages
 
@@ -652,19 +652,19 @@ sudo apt install libreoffice       # Linux</code></pre>
 <div class="page" id="p-deploy">
   <div class="pg-head">
     <div class="pg-title">Team Deployment</div>
-    <div class="pg-sub">Run VAJRA on a shared internal server.</div>
+    <div class="pg-sub">Run VEDA on a shared internal server.</div>
   </div>
   <h2>Docker</h2>
-  <pre><button class="copy-btn" onclick="cp(this)">Copy</button><code>docker build -t vajra .
-docker run -d --name vajra --restart unless-stopped \
+  <pre><button class="copy-btn" onclick="cp(this)">Copy</button><code>docker build -t veda .
+docker run -d --name veda --restart unless-stopped \
   -p 5000:5000 --env-file .env \
   -v $(pwd)/reports:/app/reports \
   -v $(pwd)/database:/app/database \
-  vajra</code></pre>
+  veda</code></pre>
   <h2>nginx Reverse Proxy + HTTPS</h2>
   <pre><button class="copy-btn" onclick="cp(this)">Copy</button><code>server {
     listen 443 ssl http2;
-    server_name vajra.yourteam.com;
+    server_name veda.yourteam.com;
     ssl_certificate /path/to/cert.pem;
     ssl_certificate_key /path/to/key.pem;
     location / {
@@ -677,7 +677,7 @@ docker run -d --name vajra --restart unless-stopped \
 HOST=127.0.0.1
 SECRET_KEY=your-strong-random-key-here</code></pre>
   <h2>Backup</h2>
-  <pre><button class="copy-btn" onclick="cp(this)">Copy</button><code>tar -czf vajra-backup-$(date +%Y%m%d).tar.gz database/ reports/</code></pre>
+  <pre><button class="copy-btn" onclick="cp(this)">Copy</button><code>tar -czf veda-backup-$(date +%Y%m%d).tar.gz database/ reports/</code></pre>
 </div>
 
 <!-- USERS -->
@@ -714,7 +714,7 @@ SECRET_KEY=your-strong-random-key-here</code></pre>
 <div class="page" id="p-addprov">
   <div class="pg-head">
     <div class="pg-title">Adding a Provider</div>
-    <div class="pg-sub">Extend VAJRA with a new AI provider in under 5 minutes.</div>
+    <div class="pg-sub">Extend VEDA with a new AI provider in under 5 minutes.</div>
   </div>
   <h2>Option A — OpenAI-compatible endpoint (1 line)</h2>
   <p>Most modern AI APIs use the OpenAI <code>/v1/chat/completions</code> format. Add one line to <code>_OPENAI_COMPAT_URLS</code> in <code>app.py</code>:</p>
@@ -732,7 +732,7 @@ AI_MODEL=their-model-name</code></pre>
     response = client.generate(model=model, prompt=user_prompt)
     return response.text</code></pre>
   <div class="callout callout-ok">
-    <strong>Contribute:</strong> Open a pull request on <a href="https://github.com/Mah3Sec/VAJRA" target="_blank">GitHub</a> to include your provider in the next release.
+    <strong>Contribute:</strong> Open a pull request on <a href="https://github.com/Mah3Sec/VEDA" target="_blank">GitHub</a> to include your provider in the next release.
   </div>
 </div>
 
@@ -740,14 +740,14 @@ AI_MODEL=their-model-name</code></pre>
 <div class="page" id="p-screenshots">
   <div class="pg-head">
     <div class="pg-title">Screenshots</div>
-    <div class="pg-sub">VAJRA in action.</div>
+    <div class="pg-sub">VEDA in action.</div>
   </div>
   <p style="font-size:13px;color:var(--t3);margin-bottom:8px;">Login Page</p>
-  <img src="screenshots/login.png" alt="VAJRA Login Page" style="width:100%;border-radius:10px;border:1px solid var(--b2);margin:0 0 24px;display:block;" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+  <img src="screenshots/login.png" alt="VEDA Login Page" style="width:100%;border-radius:10px;border:1px solid var(--b2);margin:0 0 24px;display:block;" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
   <div class="ph" style="display:none"><div class="ph-icon">🔐</div><p>Login Page — screenshot coming soon</p></div>
 
   <p style="font-size:13px;color:var(--t3);margin-bottom:8px;">Dashboard — Report Generation Form</p>
-  <img src="screenshots/dashboard.png" alt="VAJRA Dashboard" style="width:100%;border-radius:10px;border:1px solid var(--b2);margin:0 0 24px;display:block;" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+  <img src="screenshots/dashboard.png" alt="VEDA Dashboard" style="width:100%;border-radius:10px;border:1px solid var(--b2);margin:0 0 24px;display:block;" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
   <div class="ph" style="display:none"><div class="ph-icon">📋</div><p>Dashboard — screenshot coming soon</p></div>
 
   <div class="ph"><div class="ph-icon">⚡</div><p>Report Generation Progress</p></div>
@@ -755,7 +755,7 @@ AI_MODEL=their-model-name</code></pre>
   <div class="ph"><div class="ph-icon">📄</div><p>Generated DOCX Output</p></div>
 
   <div class="callout callout-info">
-    <strong>Contributing screenshots:</strong> Open a pull request adding images to <code>docs/screenshots/</code> on <a href="https://github.com/Mah3Sec/VAJRA" target="_blank">GitHub</a>.
+    <strong>Contributing screenshots:</strong> Open a pull request adding images to <code>docs/screenshots/</code> on <a href="https://github.com/Mah3Sec/VEDA" target="_blank">GitHub</a>.
   </div>
 </div>
 
@@ -763,7 +763,7 @@ AI_MODEL=their-model-name</code></pre>
 <div class="page" id="p-changelog">
   <div class="pg-head">
     <div class="pg-title">Changelog</div>
-    <div class="pg-sub">Version history for VAJRA.</div>
+    <div class="pg-sub">Version history for VEDA.</div>
   </div>
 
   <h2>v1.4.1 — April 2026 · Bug Fixes</h2>
@@ -785,7 +785,7 @@ AI_MODEL=their-model-name</code></pre>
     <li>First public open-source release — all proprietary integrations removed</li>
     <li>Multi-provider AI support — 14 providers, zero extra installs for 13</li>
     <li>Provider router built on raw <code>httpx</code> — no SDK bloat</li>
-    <li>Full documentation site at vajra.mahendrapurbia.com</li>
+    <li>Full documentation site at veda.mahendrapurbia.com</li>
   </ul>
 
   <h2>v1.3.0 — November 2025</h2>
